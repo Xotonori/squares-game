@@ -1,0 +1,51 @@
+/* Обнуляем маргины и падинги, делаем border-box для удобства*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.square-container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 18rem;
+  padding-top: 1rem;
+  border: 1px solid #b9b9b9;
+
+}
+
+#main-square {
+  display: flex;
+  flex-wrap: wrap;
+  width: 16rem;
+  margin: 0 .9rem 1rem;
+
+}
+
+.small-square {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #cecece;
+  display: inline-block;
+  transition: background-color 0.4s ease-out;
+}
+.white-square {
+  background-color: #fff !important;
+}
+
+#start {
+  margin: 0 11rem .9rem .9rem;
+  padding: 0 0.2rem;
+}
+
+#timer {
+  margin: 0 0 .9rem .9rem;
+}
